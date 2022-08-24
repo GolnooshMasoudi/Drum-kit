@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "optiserlioregular";
+  src: url("optiserlio-webfont.woff2") format("woff2"),
+    url("optiserlio-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "optiserlioregular";
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/pexels-david-bartus-844928.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+h1 {
+  color: rgb(160, 156, 160);
+  font-size: 40px;
+}
+
+.keys {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-direction: row;
+}
+.key {
+  border: 4px solid #eda172;
+  border-radius: 5px;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.9s;
+  width: 100px;
+  text-align: center;
+  color: #dae0e0;
+  background: rgba(255, 252, 97, 0);
+  /* text-shadow: 0 0 5px rgb(70, 61, 43); */
+  height: 100px;
+}
+.playing {
+  transform: scale(1.5);
+  border-color: #eda172;
+  box-shadow: 0 0 10px #eda172;
+}
+
+kbd {
+  display: block;
+  font-size: 40px;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #eda172;
+}
